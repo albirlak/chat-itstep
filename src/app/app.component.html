@@ -1,24 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="chat-wrapper">
 	<aside>
-		<ul class="user-list">
-            <li class="user">
-                <img src="./assets/avatar.png" class="avatar" alt="avatar">
-                <span>Andrey</span>
-            </li>
-            <li class="user">
-                <img src="./assets/avatar.png" class="avatar" alt="avatar">
-                <span>Denis</span>
-            </li>
-            <li class="user">
-                <img src="./assets/avatar.png" class="avatar" alt="avatar">
-                <span>Dima</span>
-            </li>
-            <li class="user">
-                <img src="./assets/avatar.png" class="avatar" alt="avatar">
-                <span>Yura</span>
-            </li>
-        </ul>
+        <app-user-list></app-user-list>
 	</aside>
 	<main>
         <div class="chat-header">
@@ -26,39 +9,10 @@
         </div>
 
 		<div class="chat-area">
-            <div class="chat-message">
-                <div class="chat-message_author">
-                    <img src="./assets/avatar.png" class="avatar" alt="avatar">
-                </div>
-                <div class="chat-message_content">
-                    <h3 class="chat-message_author-name">Vasya</h3>
-                    Hello
-                </div>
-            </div>
-            
-            <div class="chat-message message-holder">
-                <div class="chat-message_author-avatar">
-                    <img src="./assets/avatar.png" class="avatar" alt="avatar">
-                </div>
-                <div class="chat-message_content">
-                    <h3 class="chat-message_author-name">Vasya</h3>
-                    how are you?
-                </div>
-            </div>
-
-            <div class="chat-message">
-                <div class="chat-message_author">
-                    <img src="./assets/avatar.png" class="avatar" alt="avatar">
-                </div>
-                <div class="chat-message_content">
-                    <h3 class="chat-message_author-name">Vasya</h3>
-                    i am fine, how are you?
-                </div>
-            </div>
+            <app-message-list></app-message-list>
         </div>
 		<div class="chat-message-send">
-            <textarea name="message" class="chat-message-input_text"></textarea>
-            <button type="submit" class="chat-message-send_send-button">Send</button>
+            <app-message-form></app-message-form>
         </div>
 	</main>
 </div>

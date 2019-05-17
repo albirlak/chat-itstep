@@ -1,0 +1,15 @@
+:host {
+    background-color: #ccc;
+    display: flex;
+    align-content: stretch;
+    height: 30px;
+}
+ 
+.chat-message-input_text {
+    width: 100%;
+    resize: none;
+}
+
+.chat-message-send_send-button {
+    width: 100px;
+}
